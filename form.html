@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Add New Interest</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      </head>
+      <body>
+        <nav class="navbar">
+          <ul class="nav navbar-nav">
+            <li><a class="nav-link" href="mypage_bootstrap.html">Home</a></li>
+            <li><a class="nav-link" href="form.html">Add Interest</a></li>
+          </ul>
+        </nav>
+      	<h1>Add New Interest</h1>
+      	<form>
+      		<div class="form-group">
+      			<label for="interest">Interest Name</label>
+      		    <input type="text" class="form-control" id="interest" placeholder="Name">
+      		</div>
+      		<div class="form-group">
+      		  <label for="text">Text About Interest</label>
+      		  <textarea class="form-control" rows="5" id="text"></textarea>
+      		</div>
+
+      		<div class="form-group">
+	      		<p>Select Local Image:</p>
+    	  		<input type="file" id="myFile" name="filename2">
+    	  	</div>
+
+    	  	<div class="form-group">
+    	  		<label for="tweets">Select # Tweets to Display:</label>
+    	  		<select class="selectpicker" data-width="50%" id="tweets">
+    	  		    <option>1</option>
+    	  		    <option>2</option>
+    	  		    <option>3</option>
+    	  		    <option>4</option>
+    	  		    <option>5</option>
+    	  		</select>
+    	  	</div>
+
+    	  	<div class="form-group">
+    	  		<p>On a scale of 1-5, how interested are you?</p>
+    	  		<label class="checkbox-inline">
+    	  		  <input type="checkbox" value="">1
+    	  		</label>
+    	  		<label class="checkbox-inline">
+    	  		  <input type="checkbox" value="">2
+    	  		</label>
+    	  		<label class="checkbox-inline">
+    	  		  <input type="checkbox" value="">3
+    	  		</label>
+    	  		<label class="checkbox-inline">
+    	  		  <input type="checkbox" value="">4
+    	  		</label>
+    	  		<label class="checkbox-inline">
+    	  		  <input type="checkbox" value="">5
+    	  		</label>
+    	  	</div>
+
+          <div class="form-group">
+            <p>Login</p>
+            <label for="usr"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="usr" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="button" class="btn-blue">
+              <a href="mypage_bootstrap.html">Submit</a>
+            </button>
+          </div>
+      	</form>
+      </body>
+    </html>
